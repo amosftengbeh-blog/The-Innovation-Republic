@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | THE INNOVATION REPUBLIC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">THE INNOVATION REPUBLIC</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-navigation" class="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="innovators.html">Innovators</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-modern">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="section-label">Login</span>
+          <h1>Access the Innovation Republic portal</h1>
+          <p class="intro">Enter the shared visitor credentials provided by the team, then fill in your personal details for portal access.</p>
+          <div class="hero-actions">
+            <a href="#login-form" class="btn btn-primary">Sign In</a>
+            <a href="contact.html" class="btn btn-secondary">Need Help?</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1519205308914-0d74f985455d?auto=format&fit=crop&w=900&q=80" alt="Liberian innovation community" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container section-header">
+        <h2>Visitor login details</h2>
+        <p>Use the shared visitor credentials provided by the Innovation Republic team to sign in and receive program updates.</p>
+      </div>
+      <div class="login-grid">
+        <article class="login-card">
+          <h3>Portal URL</h3>
+          <p><a href="https://innovationrepublic.lr/login">https://innovationrepublic.lr/login</a></p>
+        </article>
+        <article class="login-card guidance-card">
+          <h3>Portal fields</h3>
+          <ul>
+            <li><strong>Email address</strong> — use the visitor account email</li>
+            <li><strong>Your full name</strong> — so the team knows who you are</li>
+            <li><strong>Organization or role</strong> — e.g. student, founder, mentor</li>
+            <li><strong>Interest area</strong> — programs, training, events, mentorship</li>
+            <li><strong>Message or goals</strong> — what you want to learn or join</li>
+          </ul>
+        </article>
+        <article class="login-card">
+          <h3>Need support?</h3>
+          <p>Email <a href="mailto:yetliberiainstitute@gmail.com">yetliberiainstitute@gmail.com</a> or WhatsApp <a href="https://wa.me/231778760550">+231 778 760 550</a>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-soft" id="login-form">
+      <div class="container section-header">
+        <h2>Visitor login form</h2>
+        <p>Enter the shared visitor credentials provided by the team, then complete your profile with name, organization, interest area, and goals.</p>
+      </div>
+      <div class="container login-panel">
+        <div class="login-card wide-card">
+          <div class="login-card-header">
+            <h3>Visitor portal access</h3>
+            <p>These credentials are shared for all guests. Click the button to continue to the portal.</p>
+          </div>
+          <form class="login-form" id="portal-login-form">
+            <div class="login-field">
+              <label for="login-username">Username</label>
+              <input id="login-username" type="email" placeholder="Enter shared visitor email" required />
+            </div>
+            <div class="login-field">
+              <label for="login-password">Password</label>
+              <input id="login-password" type="password" placeholder="Enter shared visitor password" required />
+            </div>
+            <div class="login-field">
+              <label for="visitor-name">Full name</label>
+              <input id="visitor-name" type="text" placeholder="Jane Doe" required />
+            </div>
+            <div class="login-field">
+              <label for="visitor-organization">Organization / role</label>
+              <input id="visitor-organization" type="text" placeholder="Student, founder, mentor" required />
+            </div>
+            <div class="login-field">
+              <label for="visitor-interest">Interest area</label>
+              <select id="visitor-interest" required>
+                <option value="">Choose an area</option>
+                <option value="Programs & Training">Programs & Training</option>
+                <option value="Events & Networking">Events & Networking</option>
+                <option value="Mentorship">Mentorship</option>
+                <option value="Funding & Investment">Funding & Investment</option>
+                <option value="Community Partnerships">Community Partnerships</option>
+              </select>
+            </div>
+            <div class="login-field">
+              <label for="visitor-goals">Goals or message</label>
+              <textarea id="visitor-goals" rows="4" placeholder="What would you like to learn, join, or achieve?" required></textarea>
+            </div>
+            <div class="login-field">
+              <label for="visitor-phone">Phone or WhatsApp</label>
+              <input id="visitor-phone" type="tel" placeholder="+231 77 876 0550" />
+            </div>
+            <div class="login-field">
+              <label for="visitor-country">Country / Region</label>
+              <input id="visitor-country" type="text" placeholder="Liberia" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Login & Submit</button>
+            <div class="login-result" id="loginMessage" aria-live="polite"></div>
+          </form>
+          <div class="preview-box">
+            <div class="login-card-header">
+              <h3>Live preview</h3>
+              <p>See the visitor info you are entering before you submit. Passwords remain hidden for security.</p>
+            </div>
+            <ul class="visitor-summary-list">
+              <li><strong>Username:</strong> <span id="previewUsername">Not entered yet</span></li>
+              <li><strong>Name:</strong> <span id="previewName">Not entered yet</span></li>
+              <li><strong>Organization / Role:</strong> <span id="previewOrganization">Not entered yet</span></li>
+              <li><strong>Interest area:</strong> <span id="previewInterest">Not entered yet</span></li>
+              <li><strong>Goals / Message:</strong> <span id="previewGoals">Not entered yet</span></li>
+              <li><strong>Country / Region:</strong> <span id="previewCountry">Not entered yet</span></li>
+              <li><strong>Phone / WhatsApp:</strong> <span id="previewPhone">Not entered yet</span></li>
+            </ul>
+          </div>
+          <div class="login-success-card hidden" id="loginSuccessCard">
+            <h3>Welcome back!</h3>
+            <p>Your visitor profile details have been captured for portal access and follow-up.</p>
+            <ul class="visitor-summary-list">
+              <li><strong>Name:</strong> <span id="summaryName"></span></li>
+              <li><strong>Organization / Role:</strong> <span id="summaryOrganization"></span></li>
+              <li><strong>Interest area:</strong> <span id="summaryInterest"></span></li>
+              <li><strong>Goals / Message:</strong> <span id="summaryGoals"></span></li>
+              <li><strong>Country:</strong> <span id="summaryCountry"></span></li>
+              <li><strong>Phone:</strong> <span id="summaryPhone"></span></li>
+            </ul>
+            <p>Open the portal link below to continue exploring updates and member announcements.</p>
+            <a href="/portal" class="btn btn-secondary">Open Portal</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p>© 2026 THE INNOVATION REPUBLIC</p>
+        <p>Built for Liberia’s Future Innovators</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

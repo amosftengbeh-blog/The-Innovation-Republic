@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | THE INNOVATION REPUBLIC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">THE INNOVATION REPUBLIC</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-navigation" class="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="innovators.html">Innovators</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-modern">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="section-label">Contact</span>
+          <h1>Let's build Liberia’s innovation future</h1>
+          <p class="intro">Have a question or want to join a program? Reach out and we’ll connect you with the right team.</p>
+          <div class="hero-actions">
+            <a href="mailto:yetliberiainstitute@gmail.com" class="btn btn-primary">Email Us</a>
+            <a href="https://wa.me/231778760550" class="btn btn-secondary">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="https://via.placeholder.com/720x520?text=Contact+Team" alt="Contact team" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-label">Stay connected</span>
+          <h2>Reach our team</h2>
+          <p>Contact us for programs, partnerships or media opportunities.</p>
+          <div class="contact-details">
+            <div><strong>Email</strong><br /><a href="mailto:yetliberiainstitute@gmail.com">yetliberiainstitute@gmail.com</a></div>
+            <div><strong>WhatsApp</strong><br /><a href="https://wa.me/231778760550">+231 778 760 550</a> / <a href="https://wa.me/231889590300">+231 889 590 300</a></div>
+          </div>
+          <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input id="contactName" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input id="contactEmail" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea id="contactMessageField" rows="5" placeholder="Tell us about your interest" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="form-result" id="contactMessage" aria-live="polite"></div>
+        </form>
+      </div>
+      <div class="newsletter-section">
+        <div class="container newsletter-card">
+          <h2>New user signup</h2>
+          <p>Join our community to receive program updates, resource drops, and early access to events.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <label>
+              Email address
+              <input id="newsletterEmail" type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              I am interested in
+              <select id="newsletterInterest">
+                <option value="Programs">Programs</option>
+                <option value="Training">Training</option>
+                <option value="Mentorship">Mentorship</option>
+                <option value="Community events">Community events</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div class="form-result" id="newsletterMessage" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+      <div class="login-panel">
+        <div class="container login-card">
+          <h2>Visitor login information</h2>
+          <p>Visit the <a href="login.html">Login page</a> to enter the credentials provided privately by the Innovation Republic team.</p>
+          <p>Need assistance? Email <a href="mailto:yetliberiainstitute@gmail.com">yetliberiainstitute@gmail.com</a> or WhatsApp +231 778 760 550.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+        </nav>
+      </div>
+      <div>
+        <p>© 2026 THE INNOVATION REPUBLIC</p>
+        <p>Built for Liberia’s Future Innovators</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
